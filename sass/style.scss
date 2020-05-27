@@ -1,0 +1,10 @@
+// 変数
+$red: #eb4242;
+$yellow: #e7dc7b;
+
+body {
+  background-color: $red;
+}
+
+@import "style2";
+@import "style3";
