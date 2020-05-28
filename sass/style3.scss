@@ -1,2 +1,37 @@
 @import 'variables';
 @import 'mixin';
+
+body {
+  background-color: $black;
+  font-family: serif;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: $black;
+  position: relative;
+}
+
+.header__img {
+  width: 50px;
+  padding-left: 30px;
+}
+
+.header__list {
+  display: flex;
+  margin-left: 50px;
+}
+
+.header__list a {
+  text-decoration: none;
+  padding-right: 40px;
+  color: $white;
+}
+
+.header__menu {
+  color: $white;
+  position: absolute;
+  right: 50px;
+}

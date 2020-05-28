@@ -1,0 +1,28 @@
+body {
+  background-color: #000000;
+  font-family: serif; }
+
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  position: relative; }
+
+.header__img {
+  width: 50px;
+  padding-left: 30px; }
+
+.header__list {
+  display: flex;
+  margin-left: 50px; }
+
+.header__list a {
+  text-decoration: none;
+  padding-right: 40px;
+  color: #ffffff; }
+
+.header__menu {
+  color: #ffffff;
+  position: absolute;
+  right: 50px; }
