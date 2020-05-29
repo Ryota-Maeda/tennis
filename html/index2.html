@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="/css/style2.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-  <script src="/js/app.js" defer></script>
+  <script src="/js/app2.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -21,5 +22,53 @@
     <i class="fas fa-bars fa-2x header__menu"></i>
   </header>
 
+  <section class="swiper-container loading">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(/img/nishikori.jpg)"  id="Nishikori">
+        <img src="/img/nishikori.jpg" class="entity-img" />
+        <div class="content">
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Kei Nishikori</p>
+          <span class="caption" data-swiper-parallax="-20%">錦織　圭</span>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url(/img/nobak.jpg)" id="Nobak">
+        <img src="/img/nobak.jpg" class="entity-img" />
+        <div class="content">
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Nobak</p>
+          <span class="caption" data-swiper-parallax="-20%">ジョコビッチ</span>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url(/img/nadaru.jpg)" id="Nadal">
+        <img src="/img/nadaru.jpg" class="entity-img" />
+        <div class="content">
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Nadal</p>
+          <span class="caption" data-swiper-parallax="-20%">ナダル</span>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url(/img/federar.jpg)" id="Federar">
+        <img src="/img/federar.jpg" class="entity-img" />
+        <div class="content">
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">federer</p>
+          <span class="caption" data-swiper-parallax="-20%">フェデラー</span>
+        </div>
+      </div>
+      <div class="swiper-slide" style="background-image:url(/img/mare.jpg)" id="Mare">
+        <img src="/img/mare.jpg" class="entity-img" />
+        <div class="content">
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Mare</p>
+          <span class="caption" data-swiper-parallax="-20%">マレー</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+  </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 </body>
 </html>
