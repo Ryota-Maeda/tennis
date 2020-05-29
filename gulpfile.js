@@ -27,5 +27,13 @@ gulp.task('sass', function () {
     })) // 取得したscssをcssに変換
     .pipe(gulp.dest('css')) // 変換した結果をcssフォルダに出力
   )
+})
+
+// sassファイルをずっと監視するタスク
+gulp.task('sass:watch', function () {
+
+  // sassフォルダ内の全scssファイルの変更を監視
+  // 変更があったら、scssをcssに変換
+  gulp.watch('sass/*.scss', gulp.task('sass'))
 
 })
