@@ -7,31 +7,249 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
   background-color: $black;
+  z-index: 5;
+  // position: relative;
+
+  &__img {
+    width: 50px;
+    padding-left: 30px;
+  }
+
+  &__list {
+    display: flex;
+    margin-left: 50px;
+
+    a {
+      text-decoration: none;
+      padding-right: 40px;
+      color: $white;
+    }
+  }
+
+  &__menu {
+    color: $white;
+    position: absolute;
+    right: 50px;
+  }
+}
+
+.main {
+  margin-top: 70px;
   position: relative;
+  background-image: url(/img/nishikori-top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 93vh;
+
+  &__title {
+    color: $white;
+    font-size: 50px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+
+  &__detail {
+    color: $white;
+
+    p {
+      font-size: 40px;
+      position: absolute;
+      bottom: 17%;
+      right: 10%;
+    }
+
+    button {
+      color: $white;
+      background-color: $red;
+      font-size: 27px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 10%;
+      right: 15%;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
 }
 
-.header__img {
-  width: 50px;
-  padding-left: 30px;
+.article {
+  position: relative;
+
+  &__imgbox {
+    display: flex;
+  }
+
+  &__detail {
+    color: $white;
+
+    p {
+      font-size: 40px;
+      position: absolute;
+      top: 32%;
+      left: 25%;
+    }
+
+    button {
+      color: $white;
+      background-color: $red;
+      font-size: 27px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 37%;
+      left: 32%;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+  &__detail2 {
+    color: $white;
+
+    p {
+      font-size: 40px;
+      position: absolute;
+      top: 5%;
+      right: 27%;
+    }
+
+    button {
+      color: $white;
+      background-color: $red;
+      font-size: 27px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10%;
+      right: 32%;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+  &__detail3 {
+    color: $white;
+
+    p {
+      font-size: 40px;
+      position: absolute;
+      bottom: 17%;
+      left: 3%;
+    }
+
+    button {
+      color: $white;
+      background-color: $red;
+      font-size: 27px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 12%;
+      left: 10%;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+  &__detail4 {
+    color: $white;
+
+    p {
+      font-size: 40px;
+      position: absolute;
+      bottom: 45%;
+      right: 3%;
+    }
+
+    button {
+      color: $white;
+      background-color: $red;
+      font-size: 27px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 40%;
+      right: 9%;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
 }
 
-.header__list {
-  display: flex;
-  margin-left: 50px;
+.article2 {
+  position: relative;
+  background-image: url(/img/taikai.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+
+  &__detail {
+    color: $white;
+
+    p {
+      font-size: 40px;
+      position: absolute;
+      bottom: 17%;
+      left: 10%;
+    }
+
+    button {
+      color: $white;
+      background-color: $red;
+      font-size: 27px;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      bottom: 10%;
+      left: 15%;
+      transition: .5s;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
 }
 
-.header__list a {
-  text-decoration: none;
-  padding-right: 40px;
-  color: $white;
+.band {
+  height: 50px;
+  background-color: $red;
 }
 
-.header__menu {
-  color: $white;
-  position: absolute;
-  right: 50px;
+.nav {
+  height: 400px;
+}
+
+.pageback {
+  height: 50px;
+  background-color: $red;
+}
+
+.footer {
+  height: 200px;
 }
