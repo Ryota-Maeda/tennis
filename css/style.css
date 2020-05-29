@@ -167,16 +167,9 @@ body {
       .article2__detail button:hover {
         transform: scale(1.1, 1.1); }
 
-.band {
-  height: 50px;
-  background-color: #ff0000; }
-
-.nav {
-  height: 400px; }
-
 .pageback {
-  height: 50px;
+  height: 35px;
   background-color: #ff0000; }
 
 .footer {
-  height: 200px; }
+  height: 100px; }
