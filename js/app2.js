@@ -1,5 +1,52 @@
+function getParameter(){
+	//Return
+	var ret=null;
+	//URL取得
+  var url = location.href; 
+  
+  console.log(url);
+
+	//URL分割
+	parameters = url.split("?");
+	//パラメータあり
+	if( parameters.length > 1 ) {
+		//分割
+    var params   = parameters[1].split("&");
+    
+		//パラメータ配列
+		var paramsArray = [];
+		//パラメータ数繰り返し
+		for ( i = 0; i < params.length; i++ ) {
+       var neet = params[i].split("=");
+       
+		   paramsArray.push(neet[0]);
+		   paramsArray[neet[0]] = neet[1];
+		}
+		//Get Param
+		ret = paramsArray["player"];
+	}
+    //
+    return ret;
+};
+
+let player = getParameter();
+
+let slideIndex = 0;
+
+if (player == 'federer') {
+  slideIndex = 3;
+} else if (player == 'nadal') {
+  slideIndex = 2;
+} else if (player == 'novak') {
+  slideIndex = 1;
+} else if (player == 'murray') {
+  slideIndex = 4;
+}
+
+
 var sliderSelector = '.swiper-container',
     options = {
+      initialSlide: slideIndex,
       init: false,
       loop: true,
       speed:800,
