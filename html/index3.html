@@ -4,22 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="/css/drawer.css">
+  <link rel="stylesheet" href="/css/style3.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-  <script src="/js/app.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js" defer></script>
+  <script src="/js/app3.js" defer></script>
 </head>
-<body>
-  <header class="header">
-    <a href="/html/index.html"><img class="header__img" src="/img/wilson.jpg" alt=""></a>
-    <ul class="header__list">
-      <a href="/html/index2.html"><li>Player</li></a>
-      <a href="/html/index3.html"><li>Competition</li></a>
-    </ul>
-    <i class="fas fa-bars fa-2x header__menu"></i>
-  </header>
+<body class="drawer drawer--right">
+    <header class="header" role="banner">
+      <a href="/html/index.html"><img class="header__img" src="/img/wilson.jpg" alt=""></a>
+      <ul class="header__list">
+        <a href="/html/index2.html"><li>Player</li></a>
+        <a href="/html/index3.html"><li>Competition</li></a>
+      </ul>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="">MENU</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html">Kei Nishikori</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=federer">Roger Federer</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=nadal">Rafael Nadal</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=novak">Novak Đoković</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=murray">Andy Murray</a></li>
+          <li><a class="drawer-menu-item" href="/html/index3.html">Competition</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="swiper-container loading">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(/img/zengou2.jpg)">
+          <img src="/img/zengou2.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Australian Open</p>
+            <span class="caption" data-swiper-parallax="-20%">開催地　オーストラリア、メルボルン<br>会場　メルボルンパーク<br>開催月　1月<br>サーフェス　ハードコート</span>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(/img/zenbutu2.jpg)">
+          <img src="/img/zenbutu2.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">French Open</p>
+            <span class="caption" data-swiper-parallax="-20%">開催地　フランス、パリ<br>会場　スタッド・ローラン・ギャロス<br>開催月　5~6月<br>サーフェス　クレーコート</span>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(/img/wimbledon.jpg)">
+          <img src="/img/wimbledon.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">The Championships, Wimbledon</p>
+            <span class="caption" data-swiper-parallax="-20%">開催地　イギリス、ロンドン<br>会場　オールイングランド・ローンテニス・アンド・クローケー・クラブ<br>開催月　6~7月<br>サーフェス　芝コート</span>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url(/img/zenbei3.jpg)">
+          <img src="/img/zenbei3.jpg" class="entity-img" />
+          <div class="content">
+            <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">US Open</p>
+            <span class="caption" data-swiper-parallax="-20%">開催地　アメリカ、ニューヨーク<br>会場　USTAビリー・ジーン・キング・ナショナル・テニス・センター<br>開催月　6~7月<br>サーフェス　ハードコート</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+    </section>
 
 </body>
 </html>

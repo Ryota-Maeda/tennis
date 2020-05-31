@@ -7,20 +7,38 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+  <link rel="stylesheet" href="/css/drawer.css">
   <link rel="stylesheet" href="/css/style2.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js" defer></script>
   <script src="/js/app2.js" defer></script>
 </head>
-<body>
-  <header class="header">
-    <a href="/html/index.html"><img class="header__img" src="/img/wilson.jpg" alt=""></a>
-    <ul class="header__list">
-      <a href="/html/index2.html"><li>Player</li></a>
-      <a href="/html/index3.html"><li>Competition</li></a>
-    </ul>
-    <i class="fas fa-bars fa-2x header__menu"></i>
-  </header>
+<body class="drawer drawer--right">
+    <header class="header" role="banner">
+      <a href="/html/index.html"><img class="header__img" src="/img/wilson.jpg" alt=""></a>
+      <ul class="header__list">
+        <a href="/html/index2.html"><li>Player</li></a>
+        <a href="/html/index3.html"><li>Competition</li></a>
+      </ul>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+          <li><a class="drawer-brand" href="">MENU</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html">Kei Nishikori</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=federer">Roger Federer</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=nadal">Rafael Nadal</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=novak">Novak Đoković</a></li>
+          <li><a class="drawer-menu-item" href="/html/index2.html?player=murray">Andy Murray</a></li>
+          <li><a class="drawer-menu-item" href="/html/index3.html">Competition</a></li>
+        </ul>
+      </nav>
+    </header>
 
   <section class="swiper-container loading">
     <div class="swiper-wrapper">
@@ -28,35 +46,67 @@
         <img src="/img/nishikori.jpg" class="entity-img" />
         <div class="content">
           <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Kei Nishikori</p>
-          <span class="caption" data-swiper-parallax="-20%">錦織　圭</span>
+          <span class="caption" data-swiper-parallax="-20%">島根県出身
+            
+            ATPランキング自己最高位はシングルス4位（アジア男子歴代最高位）。 2014年全米オープン男子シングルスの準優勝者であり、アジア男子史上初のグランドスラム4大大会シングルスファイナリスト。また、シングルスとしてはアジア男子史上初のATPワールドツアー・ファイナルズ出場者。ATPマスターズ1000では4度の準優勝。
+            
+            2008年に18歳の若さで、デルレイビーチ国際テニス選手権で優勝し、松岡修造に次いで日本男子史上2人目のATPツアーシングルス優勝者となった。これまでにATPツアーにおいてシングルスで日本人史上最多の12度の優勝、ダブルスでは準優勝を1度記録。
+            
+            2016年にはリオデジャネイロ五輪男子シングルス銅メダリストとなり、テニス競技では日本選手として96年ぶりのメダルを獲得した。
+        </span>
         </div>
       </div>
       <div class="swiper-slide" style="background-image:url(/img/nobak.jpg)" id="Nobak">
         <img src="/img/nobak.jpg" class="entity-img" />
         <div class="content">
-          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Nobak</p>
-          <span class="caption" data-swiper-parallax="-20%">ジョコビッチ</span>
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Novak Đoković</p>
+          <span class="caption" data-swiper-parallax="-20%">
+            セルビア出身。ATPランキング自己最高位はシングルス1位。ATPツアーでシングルス79勝。
+
+            グランドスラムは歴代3位の優勝17回。キャリア・グランドスラム達成者。史上初キャリアゴールデンマスターズ達成者。全豪オープン最多・最多連覇の3連覇、8回優勝。ATPファイナルズを4連覇含む5回の優勝。マスターズ1000では歴代2位の優勝34回。2011年にはオープン化以降男子6人目となる4大大会3冠達成。2015年にも達成。2015年には史上初のATPマスターズ1000年間6勝、2度目の4大大会3冠を達成。男子史上3人目となるグランドスラム4大会連続優勝。
+            
+            世界ランキング1位通算在位は歴代3位の276週、2014年7月7日から2016年11月6日まで1位に連続在位（122週・歴代4位記録）。
+
+              
+          </span>
         </div>
       </div>
       <div class="swiper-slide" style="background-image:url(/img/nadaru.jpg)" id="Nadal">
         <img src="/img/nadaru.jpg" class="entity-img" />
         <div class="content">
-          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Nadal</p>
-          <span class="caption" data-swiper-parallax="-20%">ナダル</span>
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Rafael Nadal</p>
+          <span class="caption" data-swiper-parallax="-20%">
+            グランドスラム優勝回数歴代2位（19回)、 史上7人目となるキャリア・グランドスラム達成者、全仏オープン最多連勝記録・最多5連覇含む12回優勝、オープン化以降最多のGS同一大会12回優勝、史上2人目となるキャリアゴールデンスラムを史上最年少の24歳3ヵ月で達成、2010年にはオープン化では5人目となる4大大会3冠達成、マスターズ1000では歴代最多となる35回の優勝記録を保持するテニス史上屈指の選手。
+
+            現在シングルス全85回優勝のうちの59回がクレーコートで、特にクレーコートに非常に強いことで知られ、クレーコート最高勝率、クレーコート81連勝、クレーコート50セット連続奪取、クレー大会の最多優勝記録・最長連覇記録などの数々の記録を更新している。
+            
+            北京五輪シングルス・リオデジャネイロ五輪ダブルス金メダリスト。
+          </span>
         </div>
       </div>
       <div class="swiper-slide" style="background-image:url(/img/federar.jpg)" id="Federar">
         <img src="/img/federar.jpg" class="entity-img" />
         <div class="content">
-          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">federer</p>
-          <span class="caption" data-swiper-parallax="-20%">フェデラー</span>
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Roger Federer</p>
+          <span class="caption" data-swiper-parallax="-20%">
+            芝コートでは無類の強さを誇り、ツアー通算歴代最多111勝。1世紀を超えるテニス史で築かれた数々の記録を塗り替えてきたことから、史上最高のテニスプレーヤーとの呼び声も高い。
+
+            スイス代表としても功績を残しており、2001年・2018年・2019年ホップマンカップで優勝、2008年北京五輪・男子ダブルス金メダル、2012年ロンドン五輪・男子シングルス銀メダル、2014年デビスカップ優勝に貢献した。
+            
+            テニス界において絶大なる人気を誇り、スポーツ界全体でも名実共に最高クラスの評価を受けている。
+          </span>
         </div>
       </div>
       <div class="swiper-slide" style="background-image:url(/img/mare.jpg)" id="Mare">
         <img src="/img/mare.jpg" class="entity-img" />
         <div class="content">
-          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Mare</p>
-          <span class="caption" data-swiper-parallax="-20%">マレー</span>
+          <p class="title" data-swiper-parallax="-30%" data-swiper-parallax-scale=".7">Andy Murray</p>
+          <span class="caption" data-swiper-parallax="-20%">
+            ロンドン五輪とリオデジャネイロ五輪でシングルス選手としては男女通じて初のオリンピック連覇を達成。4大大会では3度の優勝経験があり、特にウィンブルドン選手権では2013年にイギリス人選手77年ぶりの優勝者となった。マスターズ1000優勝14回。シングルス自己最高ランキングは1位。生涯獲得賞金ランキング歴代4位。
+
+            ロジャー・フェデラー、ラファエル・ナダル、ノバク・ジョコビッチと共にBIG4と称される。
+            
+            1歳年上の兄ジェイミー・マリーもプロテニス選手で、ダブルスのスペシャリスト。</span>
         </div>
       </div>
     </div>
@@ -69,6 +119,5 @@
   </section>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
 </body>
 </html>
