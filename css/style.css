@@ -169,7 +169,24 @@ body {
 
 .pageback {
   height: 35px;
-  background-color: #ff0000; }
+  background-color: #ff0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1e1e03; }
+  .pageback__arrow {
+    cursor: pointer;
+    padding-bottom: 5px; }
+  .pageback p {
+    font-size: 13px; }
 
 .footer {
-  height: 100px; }
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__end {
+    color: white;
+    font-size: 13px;
+    padding-top: 10px; }

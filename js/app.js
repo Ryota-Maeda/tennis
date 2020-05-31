@@ -15,3 +15,7 @@ $('.drawer').drawer({
   },
   showOverlay: true
 });
+
+$('#arrow').click(() => {
+  $('html').animate({scrollTop: 0}, 1000);
+})
