@@ -172,9 +172,22 @@ body {
   }
   @media(max-width:1023px){
     .swiper-container {
-      height:80vw;
+      height:100vw;
       &.swiper-container-coverflow{
         padding-top:0;
       }
+    }
+  }
+
+  .footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &__end {
+      color: white;
+      font-size: 13px;
+      padding-top: 10px;
     }
   }
