@@ -239,8 +239,31 @@ body {
 .pageback {
   height: 35px;
   background-color: $red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(30, 30, 3);
+
+  &__arrow {
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+
+  p {
+    font-size: 13px;
+  }
 }
 
 .footer {
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__end {
+    color: white;
+    font-size: 13px;
+    padding-top: 10px;
+  }
 }
